@@ -43,10 +43,10 @@ new_data_preprocessed = preprocessor.transform(new_data)
 log_count = model.predict(new_data_preprocessed) # in log scale
 
 # new_per = np.round(log_count,1)
-new_per = str(log_count)[4:6]+"."+ str(log_count)[6:7]+"%"
+# new_per = str(log_count)[4:6]+"."+ str(log_count)[6:7]+"%"
 
 # Output
 if st.button('Predict'):
     st.markdown('# Count Of Bike Rentals Is:')
     st.markdown(log_count)
-    st.markdown(new_per)
+    # st.markdown(new_per)
